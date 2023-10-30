@@ -3,16 +3,38 @@
 <head>
 <title>mindotori-html</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
 </head>
 <body>
-<h1><a href="index.html">web</h1></a>
+<h1><a href="index.html">목차</h1></a>
 <ol>
-    <a href="1.html"><li>hamster</li></a>
-    <a href="2.html"><li>html</li></a>
-    <a href="3.html"><li>css</li></a>
+    <a href="1.html"><li>민도토리</li></a>
+    <a href="2.html"><li>방명록</li></a>
+    <a href="3.html"><li>명예의전당</li></a>
 </ol>
-<h2>HTML</h2> 
-<img src="hamster.jpg" width="400">
-<p>하이퍼 텍스트 마크업 언어(영어: Hyper Text Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지 표시를 위해 개발된 지배적인 마크업 언어다. 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다.</p> I will uplode my coding study record in my <a href="https://blog.naver.com/mindotori_" target="_blank">private blog.</a> <br>it is hard for me to learn coding. i'm newbie
+<h2>방명록</h2> 
+<h3>아직 공사중인 항목입니다... 좀 더 발전해서 게시판 구축하겠음,, plz wait me</h3>
+<h5>방명록 게시판 만들고 싶었는데 능력부족,,,, 슬픔</h5>
+<img src="https://sysafety.co.kr/web/product/big/201709/644_shop1_674732.jpg" width="400">
+<p>민도토리상의 홈페이지를 방문해주셔서 감사합니다. 오신 김에 방명록 하나 부탁드림. 방명록 남겨주심 쥔장은 i am 해피에요.
+    <h4>방명록을 입력해주삼</h4>
+    <input type="text" id="writer" placeholder="작성자"><br>
+    <textarea id="writing" rows="4" cols="60" placeholder="내용을 입력해주삼."></textarea><br>
+    <button id="okay">방명록 작성완료!</button>
+    <script type="text/javascript">
+          okay.onclick = function(){
+            console.log("ok");
+            let t = document.getElementById("writer");
+            console.log(t.value)
+            let time = new data();
+            let guestdate = time.getdate();
+            let s = document.getElementById("writing");
+
+            console.log(t.value + "@" + guestdate + "@" + s.value);
+          }
+    </script>
+      
+
 </body>
 </html>
